@@ -25,7 +25,7 @@ using Flux.Optimise: update!
 
 η = 0.1 # Learning Rate
 for p in (W, b)
-  update!(p, -η * grads[p])
+  update!(p, η * grads[p])
 end
 ```
 
